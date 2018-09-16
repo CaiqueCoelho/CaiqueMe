@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/main_img_caique"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/caique1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/main_txt_name_and_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Caique Coelho - 22 anos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main_img_caique"
+        app:layout_constraintVertical_bias="0" />
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/main_card_start"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="@id/main_img_caique"
+            app:layout_constraintEnd_toStartOf="@id/main_card_friends"
+            app:layout_constraintTop_toBottomOf="@id/main_txt_name_and_age"
+            app:layout_constraintBottom_toTopOf="@id/main_card_enneagram"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:cardCornerRadius="4dp"
+            android:layout_marginTop="24dp">
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/main_item_start"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintVertical_bias="0"
+                    android:layout_margin="16dp"
+                    />
+
+                <TextView
+                    android:id="@+id/main_txt_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/txt_blue"
+                    android:text="Começar o teste"
+                    android:fontFamily="@font/avenirheavy"
+                    app:layout_constraintStart_toStartOf="@id/main_item_start"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/main_item_start"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    android:layout_marginEnd="16dp"
+                    android:textSize="16sp"
+                    android:layout_marginRight="16dp" />
+
+                <TextView
+                    android:id="@+id/main_txt_n_questions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/txt_black_opacity"
+                    android:text="Definindo o eneagrama"
+                    android:fontFamily="@font/avenirheavy"
+                    app:layout_constraintStart_toStartOf="@id/main_item_start"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/main_txt_start"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintVertical_bias="0"
+                    android:layout_marginEnd="16dp"
+                    android:textSize="10sp"
+                    android:layout_marginRight="16dp"
+                    app:layout_constraintHorizontal_bias="0"/>
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/main_card_friends"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toEndOf="@id/main_card_start"
+            app:layout_constraintEnd_toEndOf="@id/main_img_caique"
+            app:layout_constraintTop_toTopOf="@id/main_card_start"
+            app:layout_constraintBottom_toTopOf="@id/main_card_perfis"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintHorizontal_bias="1"
+            app:cardCornerRadius="4dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp">
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/main_item_friends"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintVertical_bias="0"
+                    android:layout_margin="16dp"
+                    />
+
+                <TextView
+                    android:id="@+id/main_txt_friends"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/txt_blue"
+                    android:text="Amigos"
+                    android:fontFamily="@font/avenirheavy"
+                    app:layout_constraintStart_toStartOf="@id/main_item_friends"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/main_item_friends"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    android:layout_marginEnd="16dp"
+                    android:textSize="16sp"
+                    android:layout_marginRight="16dp" />
+
+                <TextView
+                    android:id="@+id/main_txt_n_friends"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/txt_black_opacity"
+                    android:text="5 amigos"
+                    android:fontFamily="@font/avenirheavy"
+                    app:layout_constraintStart_toStartOf="@id/main_item_friends"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/main_txt_friends"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintVertical_bias="0"
+                    app:layout_constraintHorizontal_bias="0"
+                    android:layout_marginEnd="16dp"
+                    android:textSize="10sp"
+                    android:layout_marginRight="16dp" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/main_card_enneagram"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="@id/main_img_caique"
+            app:layout_constraintEnd_toStartOf="@id/main_card_perfis"
+            app:layout_constraintTop_toBottomOf="@id/main_card_start"
+            app:layout_constraintBottom_toTopOf="@id/main_card_talk"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintHorizontal_bias="0"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="4dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/main_item_enneagram"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintVertical_bias="0"
+                    android:layout_margin="16dp"
+                    />
+
+                <TextView
+                    android:id="@+id/main_txt_enneagram"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/txt_blue"
+                    android:text="Eneagrama"
+                    android:fontFamily="@font/avenirheavy"
+                    app:layout_constraintStart_toStartOf="@id/main_item_enneagram"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/main_item_enneagram"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    android:layout_marginEnd="16dp"
+                    android:textSize="16sp"
+                    android:layout_marginRight="16dp" />
+
+                <TextView
+                    android:id="@+id/main_txt_n_enneagram"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/txt_black_opacity"
+                    android:text="Definindo o eneagrama"
+                    android:fontFamily="@font/avenirheavy"
+                    app:layout_constraintStart_toStartOf="@id/main_item_enneagram"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/main_txt_enneagram"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintVertical_bias="0"
+                    app:layout_constraintHorizontal_bias="0"
+                    android:layout_marginEnd="16dp"
+                    android:textSize="10sp"
+                    android:layout_marginRight="16dp" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/main_card_perfis"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toEndOf="@id/main_card_enneagram"
+            app:layout_constraintEnd_toEndOf="@id/main_img_caique"
+            app:layout_constraintTop_toBottomOf="@id/main_card_friends"
+            app:layout_constraintBottom_toTopOf="@id/main_card_app"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintHorizontal_bias="1"
+            app:cardCornerRadius="4dp"
+            android:layout_marginTop="16dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/main_item_perfis"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintVertical_bias="0"
+                    android:layout_margin="16dp"
+                    />
+
+                <TextView
+                    android:id="@+id/main_txt_perfis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/txt_blue"
+                    android:text="Perfis"
+                    android:fontFamily="@font/avenirheavy"
+                    app:layout_constraintStart_toStartOf="@id/main_item_perfis"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/main_item_perfis"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    android:layout_marginEnd="16dp"
+                    android:textSize="16sp"
+                    android:layout_marginRight="16dp" />
+
+                <TextView
+                    android:id="@+id/main_txt_n_perfis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/txt_black_opacity"
+                    android:text="Descrição dos nove perfis"
+                    android:fontFamily="@font/avenirheavy"
+                    app:layout_constraintStart_toStartOf="@id/main_item_perfis"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/main_txt_perfis"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintVertical_bias="0"
+                    app:layout_constraintHorizontal_bias="0"
+                    android:layout_marginEnd="16dp"
+                    android:textSize="10sp"
+                    android:layout_marginRight="16dp" />
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/main_card_talk"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/main_img_caique"
+        app:layout_constraintEnd_toStartOf="@id/main_card_app"
+        app:layout_constraintTop_toBottomOf="@id/main_card_enneagram"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintHorizontal_bias="0"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="24dp">
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/main_item_talk"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintVertical_bias="0"
+                android:layout_margin="16dp"
+                />
+
+            <TextView
+                android:id="@+id/main_txt_talk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/txt_blue"
+                android:text="Eneagrama"
+                android:fontFamily="@font/avenirheavy"
+                app:layout_constraintStart_toStartOf="@id/main_item_talk"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/main_item_talk"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                android:layout_marginEnd="16dp"
+                android:textSize="16sp"
+                android:layout_marginRight="16dp" />
+
+            <TextView
+                android:id="@+id/main_txt_n_talk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/txt_black_opacity"
+                android:text="Definindo o eneagrama"
+                android:fontFamily="@font/avenirheavy"
+                app:layout_constraintStart_toStartOf="@id/main_item_talk"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/main_txt_talk"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintHorizontal_bias="0"
+                android:layout_marginEnd="16dp"
+                android:textSize="10sp"
+                android:layout_marginRight="16dp" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/main_card_app"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/main_card_talk"
+        app:layout_constraintEnd_toEndOf="@id/main_img_caique"
+        app:layout_constraintTop_toBottomOf="@id/main_card_perfis"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintHorizontal_bias="1"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="4dp"
+        android:layout_marginBottom="24dp">
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/main_item_app"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintVertical_bias="0"
+                android:layout_margin="16dp"
+                />
+
+            <TextView
+                android:id="@+id/main_txt_app"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/txt_blue"
+                android:text="Perfis"
+                android:fontFamily="@font/avenirheavy"
+                app:layout_constraintStart_toStartOf="@id/main_item_app"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/main_item_app"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                android:layout_marginEnd="16dp"
+                android:textSize="16sp"
+                android:layout_marginRight="16dp" />
+
+            <TextView
+                android:id="@+id/main_txt_n_app"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/txt_black_opacity"
+                android:text="Descrição dos nove perfis"
+                android:fontFamily="@font/avenirheavy"
+                app:layout_constraintStart_toStartOf="@id/main_item_app"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/main_txt_app"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintHorizontal_bias="0"
+                android:layout_marginEnd="16dp"
+                android:textSize="10sp"
+                android:layout_marginRight="16dp" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>
