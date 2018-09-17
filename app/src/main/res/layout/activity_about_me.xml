@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".AboutMe">
+
+    <ImageView
+        android:id="@+id/main_img_caique"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/caique1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/main_txt_name_and_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:fontFamily="cursive"
+        android:text="Caique Coelho - 22 anos"
+        android:textColor="@color/txt_white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main_img_caique"
+        app:layout_constraintVertical_bias="0" />
+
+    <View
+        android:id="@+id/about_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border_top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main_txt_name_and_age"
+        app:layout_constraintVertical_bias="0" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="@id/about_view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintVertical_bias="0">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/about_constraint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/about_txt_origin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/orkneybold"
+                android:text="Origem"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@id/about_constraint"
+                app:layout_constraintEnd_toEndOf="@id/about_constraint"
+                app:layout_constraintStart_toStartOf="@id/about_constraint"
+                app:layout_constraintTop_toTopOf="@id/about_constraint"
+                app:layout_constraintVertical_bias="0" />
+
+            <TextView
+                android:id="@+id/about_txt_origindesc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/droidserifregular"
+                android:lineSpacingExtra="5dp"
+                android:text="Olá, seja bem-vindo ao meu cantinho onde você irá conhecer um pouquinho sobre as minhas raízes e vislumbres sonhos.\n\nGuiratinguense e mato-grossense com orgulho, nascisdo no 46º dia do ano no calendário gregoriano (dia 15), no mês de fevereiro e no ano que infelizmente perdemos os Mamonas Assassinas, precisamente 5 dias após O computador Deep Blue, da IBM, vencer o campeão mundial de xadrez, Gary Kasparov e 39 anos após a fundação da Magazine Luiza."
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@id/about_constraint"
+                app:layout_constraintEnd_toEndOf="@id/about_constraint"
+                app:layout_constraintStart_toStartOf="@id/about_constraint"
+                app:layout_constraintTop_toBottomOf="@id/about_txt_origin"
+                app:layout_constraintVertical_bias="0" />
+
+            <TextView
+                android:id="@+id/about_txt_cg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/orkneybold"
+                android:text="De Guiratinga para o Mundo"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@id/about_constraint"
+                app:layout_constraintEnd_toEndOf="@id/about_constraint"
+                app:layout_constraintStart_toStartOf="@id/about_constraint"
+                app:layout_constraintTop_toBottomOf="@id/about_txt_origindesc"
+                app:layout_constraintVertical_bias="0" />
+
+            <TextView
+                android:id="@+id/about_txt_cgdesc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/droidserifregular"
+                android:lineSpacingExtra="5dp"
+                android:text="Hoje resido em Campo Grande em Mato Grosso do Sul, pois todo filho vira passarinho e quer voar e assim vim atrás dos meus sonhos, das minhas conquitas e do futuro que eu quero não só para mim, mas para todo o mundo! Me mudei para Campo Grande em busca da grande primeira conquista da minha vida, a tão sonhada formação em Ciência da Computação, alcançada finalmente no primeiro semestre de 2018!"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@id/about_constraint"
+                app:layout_constraintEnd_toEndOf="@id/about_constraint"
+                app:layout_constraintStart_toStartOf="@id/about_constraint"
+                app:layout_constraintTop_toBottomOf="@id/about_txt_cg"
+                app:layout_constraintVertical_bias="0" />
+
+            <TextView
+                android:id="@+id/about_txt_today"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/orkneybold"
+                android:text="Nos dias de hoje..."
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@id/about_constraint"
+                app:layout_constraintEnd_toEndOf="@id/about_constraint"
+                app:layout_constraintStart_toStartOf="@id/about_constraint"
+                app:layout_constraintTop_toBottomOf="@id/about_txt_cgdesc"
+                app:layout_constraintVertical_bias="0" />
+
+            <TextView
+                android:id="@+id/about_txt_todaydesc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/droidserifregular"
+                android:lineSpacingExtra="5dp"
+                android:text="Após a formação resolvi me desafiar um pouco mais e sair da zona de conforto, trocando do cargo de Manager Customer Experience para Desenvolvedor de Apps Android na Jera, trocando uma área em que estava consolidado por outra completamente nova que me forçaria a continuar evoluindo e aprendendo cada dia mais, hoje tendo alcançado maturidade na área, me coloco novamente a procura de algo que me desafie, que me inspere e que continue me trazendo felicidade em estar evoluindo e ajudando a construir um mundo melhor para pessoas melhores!"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@id/about_constraint"
+                app:layout_constraintEnd_toEndOf="@id/about_constraint"
+                app:layout_constraintStart_toStartOf="@id/about_constraint"
+                app:layout_constraintTop_toBottomOf="@id/about_txt_today"
+                app:layout_constraintVertical_bias="0" />
+
+            <TextView
+                android:id="@+id/about_txt_hobbies"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/orkneybold"
+                android:text="Meus Hobbies"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@id/about_constraint"
+                app:layout_constraintEnd_toEndOf="@id/about_constraint"
+                app:layout_constraintStart_toStartOf="@id/about_constraint"
+                app:layout_constraintTop_toBottomOf="@id/about_txt_todaydesc"
+                app:layout_constraintVertical_bias="0" />
+
+            <TextView
+                android:id="@+id/about_txt_hobbiesdesc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/droidserifregular"
+                android:lineSpacingExtra="5dp"
+                android:text="Assim como todos no mundo eu possuo muitos hobbies que estão diretamente e indiretemente ligados com os meus sonhos, com as minhas peculiaridades, com a unicidade do meu ser e definem a minha personalidade. Entre todos eles existem cinco que se destacam acima de tudo e formam a minha essência:\n\nAprender: Conhecimento é poder, conhecimento é riqueza e quanto mais eu aprendo, mais eu sei o quanto eu não sei. Conhecimento move o mundo e move a minha vida, sou apaixonado em aprender e a única certeza que eu tenho sobre a vida é que um dia sem um novo conhecimento é um dia perdido\n\nEnsinar e ajudar: Conhecimento que não é compartilhado é conhecimento morto. Eu acredito fortemente que a única chave para um futuro próspero, com igualitarismo e paz só será alcançado com o conhecimento sendo largamente disseminado, independente do conhecimento todo conhecimento deve ser compartilhado, sendo essa uma das minhas missões pessoais, hoje leciono voluntariamente aulas de portuguẽs para intercambistas da AIESEC, além de colocar em prática essa missão a partir de outras formas, como publicando textos no LinkedIn e no Medium e com o meu aplicativo Teste Eneagrama disponível para dispositivos android\n\nEstar com pessoas: O ser humano nasceu para ser um ser social e estar com pessoas compartilhando conhecimento, compartilhando ideias, compartilhando bobeiras, ou apenas estando cercada delas, seja no silência, seja pela música, seja pela diversão é um dos hobbies e é que me faz me sentir bem, é o que me faz feliz!\n\nSéries e Filmes: Afinal nem só de conhecimento útil vive o homem hahaha. Sou apaixonado por televisão e por cinema e acompanho as mais diversas séries existentes, seja de drama, humor ou ficção, a cinematografia é uma paixão e ainda sonho em poder contrubuir com a área\n\n Criar: Quando se trata em criatividade eu sou uma máquina sem fim, eu souno infinito, a minha vida é um dinamismo, sou adepto do manifesto ágil em todas as áreas da minha vida e isso me permite criar correlações entre todos os extremos possíveis, sou apaixonado por dados, estatística, pessoas e cinema e essas paixões instigam a minha criatividade a cada dia descobrir algo novo que merece ser criado e compartilhado"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@id/about_constraint"
+                app:layout_constraintEnd_toEndOf="@id/about_constraint"
+                app:layout_constraintStart_toStartOf="@id/about_constraint"
+                app:layout_constraintTop_toBottomOf="@id/about_txt_hobbies"
+                app:layout_constraintVertical_bias="0" />
+
+            <TextView
+                android:id="@+id/about_txt_dreams"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/orkneybold"
+                android:text="Sonhos e objetivos de vida"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@id/about_constraint"
+                app:layout_constraintEnd_toEndOf="@id/about_constraint"
+                app:layout_constraintStart_toStartOf="@id/about_constraint"
+                app:layout_constraintTop_toBottomOf="@id/about_txt_hobbiesdesc"
+                app:layout_constraintVertical_bias="0" />
+
+            <TextView
+                android:id="@+id/about_txt_dreamsdesc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/droidserifregular"
+                android:lineSpacingExtra="5dp"
+                android:text="\''Quem não sabe onde quer chegar, qualquer lugar serve.'' Essa é uma das afirmações que repito para mim todos dias em todas as manhãs e sempre que me sinto perdido e assim como planejo todas as atividades do meu dia também planejo todos os meus objetivos e sonhos de vida, com certeza esses sonhos já mudaram muito ao longo do caminho, desde quando sohava em ser presidente do Brasil quando era apenas uma criança. Hoje sonho em poder ser uma referência e inspiração em nosso país e pretendo começar encontrando um ambiente de trabalho que me inspire a continuar crescendo, que me de orgulho em fazer parte do quadro de colaboradores, sonho em trabalhar em um lugar que o trabalho seja uma paixão, que trabalho seja uma forma de impactar positivamente na vida de todas as pessoas que estejam em contato com ele e que acima de tudo me proporcione uma experiência de percentiemnto e amor"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@id/about_constraint"
+                app:layout_constraintEnd_toEndOf="@id/about_constraint"
+                app:layout_constraintStart_toStartOf="@id/about_constraint"
+                app:layout_constraintTop_toBottomOf="@id/about_txt_dreams"
+                app:layout_constraintVertical_bias="0" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

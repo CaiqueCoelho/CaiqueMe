@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TimelineActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/timeline_jera_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ver mais"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="@id/timeline_txt_jera"
+                app:layout_constraintTop_toBottomOf="@id/timeline_txt_jera2"
+                app:layout_constraintVertical_bias="0" />
+
+            <TextView
+                android:id="@+id/timeline_txt_graduation2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/droidserifregular"
+                android:lineSpacingExtra="5dp"
+                android:text="UFMS: Maio de 2013"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/timeline_txt_graduation"
+                app:layout_constraintTop_toBottomOf="@id/timeline_txt_graduation"
+                app:layout_constraintVertical_bias="0" />
+
+            <ImageView
+                android:id="@+id/timeline_item_ufms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="64dp"
+                android:background="@drawable/ic_ellipse"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/timeline_item_aiesec"
+                app:layout_constraintVertical_bias="0" />
+
+            <ImageView
+                android:id="@+id/timeline_item_ufms2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="86dp"
+                android:background="@drawable/ic_ellipse"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/timeline_item_jera2"
+                app:layout_constraintVertical_bias="0" />
+
+            <TextView
+                android:id="@+id/timeline_jera3_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ver mais"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="@id/timeline_txt_jera_3"
+                app:layout_constraintTop_toBottomOf="@id/timeline_txt_jera2_3"
+                app:layout_constraintVertical_bias="0" />
+
+            <TextView
+                android:id="@+id/timeline_txt_aiesec"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/droidserifregular"
+                android:lineSpacingExtra="5dp"
+                android:text="Diretor de Gestão de Talentos"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/timeline_item_aiesec"
+                app:layout_constraintTop_toTopOf="@id/timeline_item_aiesec"
+                app:layout_constraintVertical_bias="0" />
+
+            <TextView
+                android:id="@+id/timeline_txt_jera"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/droidserifregular"
+                android:lineSpacingExtra="5dp"
+                android:text="Estágio - Analista de Requisitos e Qualidade"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/timeline_item_jera"
+                app:layout_constraintTop_toTopOf="@id/timeline_item_jera"
+                app:layout_constraintVertical_bias="0" />
+
+            <ImageView
+                android:id="@+id/timeline_item_jera2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="86dp"
+                android:background="@drawable/ic_ellipse"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/timeline_item_jera"
+                app:layout_constraintVertical_bias="0" />
+
+            <TextView
+                android:id="@+id/timeline_txt_graduation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/droidserifregular"
+                android:lineSpacingExtra="5dp"
+                android:text="Graduação em Ciência da Computação"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/timeline_item_graduation"
+                app:layout_constraintTop_toTopOf="@id/timeline_item_graduation"
+                app:layout_constraintVertical_bias="0" />
+
+            <ImageView
+                android:id="@+id/timeline_item_aiesec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="64dp"
+                android:background="@drawable/ic_ellipse"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/timeline_item_graduation"
+                app:layout_constraintVertical_bias="0" />
+
+            <TextView
+                android:id="@+id/timeline_txt_ufms_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/droidserifregular"
+                android:lineSpacingExtra="5dp"
+                android:text="Finalização da Graduação"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/timeline_item_ufms2"
+                app:layout_constraintTop_toTopOf="@id/timeline_item_ufms2"
+                app:layout_constraintVertical_bias="0" />
+
+            <TextView
+                android:id="@+id/timeline_aiesec_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ver mais"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="@id/timeline_txt_aiesec"
+                app:layout_constraintTop_toBottomOf="@id/timeline_txt_aiesec2"
+                app:layout_constraintVertical_bias="0" />
+
+            <TextView
+                android:id="@+id/timeline_txt_jera_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/droidserifregular"
+                android:lineSpacingExtra="5dp"
+                android:text="Estágio - Manager Customer Experience"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/timeline_item_jera2"
+                app:layout_constraintTop_toTopOf="@id/timeline_item_jera2"
+                app:layout_constraintVertical_bias="0" />
+
+            <ImageView
+                android:id="@+id/timeline_item_jera3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/ic_ellipse"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/timeline_item_ufms2"
+                app:layout_constraintVertical_bias="0" />
+
+            <TextView
+                android:id="@+id/timeline_txt_jera_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/droidserifregular"
+                android:lineSpacingExtra="5dp"
+                android:text="Desenvovedor Android"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/timeline_item_jera3"
+                app:layout_constraintTop_toTopOf="@id/timeline_item_jera3"
+                app:layout_constraintVertical_bias="0" />
+
+            <TextView
+                android:id="@+id/timeline_txt_jera2_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/droidserifregular"
+                android:lineSpacingExtra="5dp"
+                android:text="Jera: Julho/2018 - Até o momento"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/timeline_txt_jera_3"
+                app:layout_constraintTop_toBottomOf="@id/timeline_txt_jera_3"
+                app:layout_constraintVertical_bias="0" />
+
+            <TextView
+                android:id="@+id/timeline_txt_jera2_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/droidserifregular"
+                android:lineSpacingExtra="5dp"
+                android:text="Jera: Janeiro/2017 - Junho/2017"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/timeline_txt_jera_2"
+                app:layout_constraintTop_toBottomOf="@id/timeline_txt_jera_2"
+                app:layout_constraintVertical_bias="0" />
+
+            <TextView
+                android:id="@+id/timeline_txt_aiesec2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/droidserifregular"
+                android:lineSpacingExtra="5dp"
+                android:text="AIESEC: Junho/2013 - Janeiro/2017"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/timeline_txt_aiesec"
+                app:layout_constraintTop_toBottomOf="@id/timeline_txt_aiesec"
+                app:layout_constraintVertical_bias="0" />
+
+            <ImageView
+                android:id="@+id/timeline_item_jera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="64dp"
+                android:background="@drawable/ic_ellipse"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/timeline_item_ufms"
+                app:layout_constraintVertical_bias="0" />
+
+            <TextView
+                android:id="@+id/timeline_txt_timeline"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:fontFamily="cursive"
+                android:text="Timeline"
+                android:textColor="@android:color/black"
+                android:textSize="36sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0" />
+
+            <ImageView
+                android:id="@+id/timeline_item_graduation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/ic_ellipse"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/timeline_txt_timeline"
+                app:layout_constraintVertical_bias="0" />
+
+            <TextView
+                android:id="@+id/timeline_ufms_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ver mais"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="@id/timeline_txt_ufms"
+                app:layout_constraintTop_toBottomOf="@id/timeline_txt_ufms2"
+                app:layout_constraintVertical_bias="0" />
+
+            <TextView
+                android:id="@+id/timeline_txt_jera2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/droidserifregular"
+                android:lineSpacingExtra="5dp"
+                android:text="Jera: Julho/2017 - Dezembro/2017"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/timeline_txt_jera"
+                app:layout_constraintTop_toBottomOf="@id/timeline_txt_jera"
+                app:layout_constraintVertical_bias="0" />
+
+            <TextView
+                android:id="@+id/timeline_jera2_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ver mais"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="@id/timeline_txt_jera2"
+                app:layout_constraintTop_toBottomOf="@id/timeline_txt_jera2_2"
+                app:layout_constraintVertical_bias="0" />
+
+            <TextView
+                android:id="@+id/timeline_txt_ufms2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/droidserifregular"
+                android:lineSpacingExtra="5dp"
+                android:text="UFMS: Julho/2016 - Junho/2017"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/timeline_txt_ufms"
+                app:layout_constraintTop_toBottomOf="@id/timeline_txt_ufms"
+                app:layout_constraintVertical_bias="0" />
+
+            <TextView
+                android:id="@+id/timeline_txt_ufms"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/droidserifregular"
+                android:lineSpacingExtra="5dp"
+                android:text="Estágio - Técnico em Informática"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/timeline_item_ufms"
+                app:layout_constraintTop_toTopOf="@id/timeline_item_ufms"
+                app:layout_constraintVertical_bias="0" />
+
+            <TextView
+                android:id="@+id/timeline_txt_ufms2_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/droidserifregular"
+                android:lineSpacingExtra="5dp"
+                android:text="UFMS: Junho/2018"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/timeline_txt_ufms_2"
+                app:layout_constraintTop_toBottomOf="@id/timeline_txt_ufms_2"
+                app:layout_constraintVertical_bias="0" />
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
