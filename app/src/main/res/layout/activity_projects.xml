@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProjectsActivity">
+
+    <TextView
+        android:id="@+id/projects_txt_projects"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:fontFamily="cursive"
+        android:text="Conquistas e Projetos"
+        android:textColor="@color/txt_blue"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/projects_txt_projects">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/main_card_app"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="24dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/constraint"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintStart_toEndOf="@id/main_card_talk"
+                app:layout_constraintTop_toBottomOf="@id/main_card_caiqueandlu"
+                app:layout_constraintVertical_bias="0">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/main_item_app"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_margin="16dp"
+                        android:src="@drawable/ic_ellipse"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0" />
+
+                    <TextView
+                        android:id="@+id/main_txt_app"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        android:fontFamily="@font/avenirheavy"
+                        android:text="Gemidão Cam"
+                        android:textColor="@color/txt_blue"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="@id/main_item_app"
+                        app:layout_constraintTop_toBottomOf="@id/main_item_app" />
+
+                    <TextView
+                        android:id="@+id/main_txt_n_app"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        android:fontFamily="@font/avenirheavy"
+                        android:text="Aplicativo android"
+                        android:textColor="@color/txt_black_opacity"
+                        android:textSize="10sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="@id/main_item_app"
+                        app:layout_constraintTop_toBottomOf="@id/main_txt_app"
+                        app:layout_constraintVertical_bias="0" />
+
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/main_card_talk"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/main_card_app"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="@id/constraint"
+                app:layout_constraintTop_toBottomOf="@id/main_card_projects"
+                app:layout_constraintVertical_bias="0">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/main_item_talk"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_margin="16dp"
+                        android:src="@drawable/ic_ellipse"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0" />
+
+                    <TextView
+                        android:id="@+id/main_txt_talk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        android:fontFamily="@font/avenirheavy"
+                        android:text="App Gasolina"
+                        android:textColor="@color/txt_blue"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="@id/main_item_talk"
+                        app:layout_constraintTop_toBottomOf="@id/main_item_talk" />
+
+                    <TextView
+                        android:id="@+id/main_txt_n_talk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        android:fontFamily="@font/avenirheavy"
+                        android:text="Aplicativo android"
+                        android:textColor="@color/txt_black_opacity"
+                        android:textSize="10sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="@id/main_item_talk"
+                        app:layout_constraintTop_toBottomOf="@id/main_txt_talk"
+                        app:layout_constraintVertical_bias="0" />
+
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/main_card_aboutme"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="24dp"
+                app:cardCornerRadius="4dp"
+                app:layout_constraintBottom_toTopOf="@id/main_card_projects"
+                app:layout_constraintEnd_toStartOf="@id/main_card_timeline"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@id/constraint"
+                app:layout_constraintTop_toTopOf="@id/constraint"
+                app:layout_constraintVertical_bias="0">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/main_item_start"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_margin="16dp"
+                        android:src="@drawable/ic_ellipse"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0" />
+
+                    <TextView
+                        android:id="@+id/main_aboutme"
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/avenirheavy"
+                        android:text="Teste Eneagrama"
+                        android:textColor="@color/txt_blue"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="@id/main_item_start"
+                        app:layout_constraintTop_toBottomOf="@id/main_item_start" />
+
+                    <TextView
+                        android:id="@+id/main_txt_n_questions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        android:fontFamily="@font/avenirheavy"
+                        android:text="App android + 70 mil download"
+                        android:textColor="@color/txt_black_opacity"
+                        android:textSize="10sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="@id/main_item_start"
+                        app:layout_constraintTop_toBottomOf="@id/main_aboutme"
+                        app:layout_constraintVertical_bias="0" />
+
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/main_card_caiqueandlu"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="4dp"
+                app:layout_constraintBottom_toTopOf="@id/main_card_app"
+                app:layout_constraintEnd_toEndOf="@id/constraint"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintStart_toEndOf="@id/main_card_projects"
+                app:layout_constraintTop_toBottomOf="@id/main_card_timeline"
+                app:layout_constraintVertical_bias="0">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/main_item_perfis"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_margin="16dp"
+                        android:src="@drawable/ic_ellipse"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0" />
+
+                    <TextView
+                        android:id="@+id/main_txt_caiqueandlu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="29dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/avenirheavy"
+                        android:text="Meus Textos"
+                        android:textColor="@color/txt_blue"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="@id/main_item_perfis"
+                        app:layout_constraintTop_toBottomOf="@id/main_item_perfis" />
+
+                    <TextView
+                        android:id="@+id/main_txt_n_perfis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        android:fontFamily="@font/avenirheavy"
+                        android:text="Compartilhando conhecimento"
+                        android:textColor="@color/txt_black_opacity"
+                        android:textSize="10sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="@id/main_item_perfis"
+                        app:layout_constraintTop_toBottomOf="@id/main_txt_caiqueandlu"
+                        app:layout_constraintVertical_bias="0" />
+
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/main_card_projects"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="4dp"
+                app:layout_constraintBottom_toTopOf="@id/main_card_talk"
+                app:layout_constraintEnd_toStartOf="@id/main_card_caiqueandlu"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="@id/constraint"
+                app:layout_constraintTop_toBottomOf="@id/main_card_aboutme"
+                app:layout_constraintVertical_bias="0">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/main_item_enneagram"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_margin="16dp"
+                        android:src="@drawable/ic_ellipse"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0" />
+
+                    <TextView
+                        android:id="@+id/main_txt_projects"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        android:fontFamily="@font/avenirheavy"
+                        android:text="IA e Python"
+                        android:textColor="@color/txt_blue"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="@id/main_item_enneagram"
+                        app:layout_constraintTop_toBottomOf="@id/main_item_enneagram" />
+
+                    <TextView
+                        android:id="@+id/main_txt_n_enneagram"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        android:fontFamily="@font/avenirheavy"
+                        android:text="Certificados"
+                        android:textColor="@color/txt_black_opacity"
+                        android:textSize="10sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="@id/main_item_enneagram"
+                        app:layout_constraintTop_toBottomOf="@id/main_txt_projects"
+                        app:layout_constraintVertical_bias="0" />
+
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/main_card_timeline"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="16dp"
+                app:cardCornerRadius="4dp"
+                app:layout_constraintBottom_toTopOf="@id/main_card_caiqueandlu"
+                app:layout_constraintEnd_toEndOf="@id/constraint"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintStart_toEndOf="@id/main_card_aboutme"
+                app:layout_constraintTop_toTopOf="@id/main_card_aboutme"
+                app:layout_constraintVertical_bias="0">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/main_item_friends"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_margin="16dp"
+                        android:src="@drawable/ic_ellipse"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0" />
+
+                    <TextView
+                        android:id="@+id/main_txt_timeline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        android:fontFamily="@font/avenirheavy"
+                        android:text="TCC"
+                        android:textColor="@color/txt_blue"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="@id/main_item_friends"
+                        app:layout_constraintTop_toBottomOf="@id/main_item_friends" />
+
+                    <TextView
+                        android:id="@+id/main_txt_n_friends"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        android:fontFamily="@font/avenirheavy"
+                        android:text="Projeto na área de IA"
+                        android:textColor="@color/txt_black_opacity"
+                        android:textSize="10sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="@id/main_item_friends"
+                        app:layout_constraintTop_toBottomOf="@id/main_txt_timeline"
+                        app:layout_constraintVertical_bias="0" />
+
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.v7.widget.CardView>
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

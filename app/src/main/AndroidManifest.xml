@@ -17,7 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".AboutMe" />
-        <activity android:name=".TimelineActivity"></activity>
+        <activity android:name=".TimelineActivity" />
+        <activity android:name=".DescJobActivity" />
+        <activity android:name=".ProjectsActivity"></activity>
     </application>
 
 </manifest>
