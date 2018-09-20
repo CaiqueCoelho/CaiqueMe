@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DescJobActivity">
+
+    <TextView
+        android:id="@+id/desc_title_project"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:fontFamily="cursive"
+        android:text="Timeline"
+        android:textColor="@color/txt_blue"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/desc_time_projectt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/desc_title_project"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintHorizontal_bias="0"
+        tools:text="22 de janeiro - 16 de julho"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="bold"
+        android:fontFamily="cu"/>
+
+    <TextView
+        android:id="@+id/desc_desc_project"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        app:layout_constraintTop_toBottomOf="@id/desc_time_projectt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintHorizontal_bias="0"
+        tools:text="kdashdjkshdkjashdkjashkdjhaskjdhaskjdhkasdhjkashdkjhskhskadhkasjdhjkasdhkjashdkjashdkjashdjkhaskjdhaksjdhkasjdhjkasdh"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/droidserifitalic"/>
+
+    <Button
+        android:id="@+id/project_see"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/desc_desc_project"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Ver Projeto"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:fontFamily="@font/avenirlight"
+        android:textSize="18sp"
+        android:textColor="@color/txt_blue"
+        android:layout_margin="16dp"
+        app:layout_constraintVertical_bias="0.1"
+        android:background="@drawable/shape_button_filled"/>
+
+    <Button
+        android:id="@+id/project_see_git"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/project_see"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Ver Projeto no Github"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:fontFamily="@font/avenirlight"
+        android:textSize="18sp"
+        android:textColor="@color/txt_blue"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:visibility="gone"
+        app:layout_constraintVertical_bias="0.05"
+        android:background="@drawable/shape_button_filled"/>
+
+</android.support.constraint.ConstraintLayout>

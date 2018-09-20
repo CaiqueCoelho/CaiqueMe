@@ -39,7 +39,7 @@
             android:layout_height="wrap_content">
 
             <android.support.v7.widget.CardView
-                android:id="@+id/main_card_app"
+                android:id="@+id/projects_card_cam"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_marginBottom="24dp"
@@ -48,8 +48,8 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@id/constraint"
                 app:layout_constraintHorizontal_bias="1"
-                app:layout_constraintStart_toEndOf="@id/main_card_talk"
-                app:layout_constraintTop_toBottomOf="@id/main_card_caiqueandlu"
+                app:layout_constraintStart_toEndOf="@+id/projects_card_gas"
+                app:layout_constraintTop_toBottomOf="@+id/projects_card_textos"
                 app:layout_constraintVertical_bias="0">
 
                 <android.support.constraint.ConstraintLayout
@@ -107,7 +107,7 @@
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
-                android:id="@+id/main_card_talk"
+                android:id="@+id/projects_card_gas"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_marginBottom="24dp"
@@ -115,10 +115,10 @@
                 android:layout_marginTop="16dp"
                 app:cardCornerRadius="4dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/main_card_app"
+                app:layout_constraintEnd_toStartOf="@+id/projects_card_cam"
                 app:layout_constraintHorizontal_bias="0"
                 app:layout_constraintStart_toStartOf="@id/constraint"
-                app:layout_constraintTop_toBottomOf="@id/main_card_projects"
+                app:layout_constraintTop_toBottomOf="@+id/projects_card_ia"
                 app:layout_constraintVertical_bias="0">
 
                 <android.support.constraint.ConstraintLayout
@@ -176,13 +176,13 @@
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
-                android:id="@+id/main_card_aboutme"
+                android:id="@+id/projects_card_eneagrama"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_marginTop="24dp"
                 app:cardCornerRadius="4dp"
-                app:layout_constraintBottom_toTopOf="@id/main_card_projects"
-                app:layout_constraintEnd_toStartOf="@id/main_card_timeline"
+                app:layout_constraintBottom_toTopOf="@+id/projects_card_ia"
+                app:layout_constraintEnd_toStartOf="@+id/projects_card_tcc"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="@id/constraint"
                 app:layout_constraintTop_toTopOf="@id/constraint"
@@ -242,16 +242,16 @@
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
-                android:id="@+id/main_card_caiqueandlu"
+                android:id="@+id/projects_card_textos"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_marginTop="16dp"
                 app:cardCornerRadius="4dp"
-                app:layout_constraintBottom_toTopOf="@id/main_card_app"
+                app:layout_constraintBottom_toTopOf="@+id/projects_card_cam"
                 app:layout_constraintEnd_toEndOf="@id/constraint"
                 app:layout_constraintHorizontal_bias="1"
-                app:layout_constraintStart_toEndOf="@id/main_card_projects"
-                app:layout_constraintTop_toBottomOf="@id/main_card_timeline"
+                app:layout_constraintStart_toEndOf="@+id/projects_card_ia"
+                app:layout_constraintTop_toBottomOf="@+id/projects_card_tcc"
                 app:layout_constraintVertical_bias="0">
 
                 <android.support.constraint.ConstraintLayout
@@ -307,17 +307,17 @@
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
-                android:id="@+id/main_card_projects"
+                android:id="@+id/projects_card_ia"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginTop="16dp"
                 app:cardCornerRadius="4dp"
-                app:layout_constraintBottom_toTopOf="@id/main_card_talk"
-                app:layout_constraintEnd_toStartOf="@id/main_card_caiqueandlu"
+                app:layout_constraintBottom_toTopOf="@+id/projects_card_gas"
+                app:layout_constraintEnd_toStartOf="@+id/projects_card_textos"
                 app:layout_constraintHorizontal_bias="0"
                 app:layout_constraintStart_toStartOf="@id/constraint"
-                app:layout_constraintTop_toBottomOf="@id/main_card_aboutme"
+                app:layout_constraintTop_toBottomOf="@+id/projects_card_eneagrama"
                 app:layout_constraintVertical_bias="0">
 
                 <android.support.constraint.ConstraintLayout
@@ -375,16 +375,16 @@
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
-                android:id="@+id/main_card_timeline"
+                android:id="@+id/projects_card_tcc"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_marginStart="16dp"
                 app:cardCornerRadius="4dp"
-                app:layout_constraintBottom_toTopOf="@id/main_card_caiqueandlu"
+                app:layout_constraintBottom_toTopOf="@+id/projects_card_textos"
                 app:layout_constraintEnd_toEndOf="@id/constraint"
                 app:layout_constraintHorizontal_bias="1"
-                app:layout_constraintStart_toEndOf="@id/main_card_aboutme"
-                app:layout_constraintTop_toTopOf="@id/main_card_aboutme"
+                app:layout_constraintStart_toEndOf="@+id/projects_card_eneagrama"
+                app:layout_constraintTop_toTopOf="@+id/projects_card_eneagrama"
                 app:layout_constraintVertical_bias="0">
 
                 <android.support.constraint.ConstraintLayout

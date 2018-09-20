@@ -19,7 +19,8 @@
         <activity android:name=".AboutMe" />
         <activity android:name=".TimelineActivity" />
         <activity android:name=".DescJobActivity" />
-        <activity android:name=".ProjectsActivity"></activity>
+        <activity android:name=".ProjectsActivity" />
+        <activity android:name=".DescProjectActivity"></activity>
     </application>
 
 </manifest>
