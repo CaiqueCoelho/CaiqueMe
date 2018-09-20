@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="caique.me.caiqueme">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -16,11 +18,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AboutMe" />
+        <activity android:name=".AboutMeActivity" />
         <activity android:name=".TimelineActivity" />
         <activity android:name=".DescJobActivity" />
         <activity android:name=".ProjectsActivity" />
-        <activity android:name=".DescProjectActivity"></activity>
+        <activity android:name=".DescProjectActivity" />
+        <activity android:name=".WebviewActivity"></activity>
     </application>
 
 </manifest>

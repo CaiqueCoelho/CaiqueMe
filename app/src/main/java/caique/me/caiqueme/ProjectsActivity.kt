@@ -13,6 +13,12 @@ class ProjectsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_projects)
 
+        projects_card_eneagrama.setOnClickListener { clickSeeMore(projects_card_eneagrama) }
+        projects_card_tcc.setOnClickListener { clickSeeMore(projects_card_tcc) }
+        projects_card_ia.setOnClickListener { clickSeeMore(projects_card_ia) }
+        projects_card_textos.setOnClickListener { clickSeeMore(projects_card_textos) }
+        projects_card_gas.setOnClickListener { clickSeeMore(projects_card_gas) }
+        projects_card_cam.setOnClickListener { clickSeeMore(projects_card_cam) }
 
     }
 
@@ -22,37 +28,37 @@ class ProjectsActivity : AppCompatActivity() {
 
             projects_card_eneagrama.id ->{
                 val intent = Intent(this, DescProjectActivity::class.java)
-                intent.putExtra("origin", ENEAGRAMA)
+                intent.putExtra("origin", ENEAGRAMA.toString())
                 startActivity(intent)
             }
 
             projects_card_tcc.id ->{
                 val intent = Intent(this, DescProjectActivity::class.java)
-                intent.putExtra("origin", TCC)
+                intent.putExtra("origin", TCC.toString())
                 startActivity(intent)
             }
 
             projects_card_ia.id ->{
                 val intent = Intent(this, DescProjectActivity::class.java)
-                intent.putExtra("origin", IA)
+                intent.putExtra("origin", IA.toString())
                 startActivity(intent)
             }
 
             projects_card_textos.id ->{
                 val intent = Intent(this, DescProjectActivity::class.java)
-                intent.putExtra("origin", TEXTS)
+                intent.putExtra("origin", TEXTS.toString())
                 startActivity(intent)
             }
 
             projects_card_gas.id ->{
                 val intent = Intent(this, DescProjectActivity::class.java)
-                intent.putExtra("origin", GASOLINA)
+                intent.putExtra("origin", GASOLINA.toString())
                 startActivity(intent)
             }
 
             projects_card_cam.id ->{
                 val intent = Intent(this, DescProjectActivity::class.java)
-                intent.putExtra("origin", CAM)
+                intent.putExtra("origin", CAM.toString())
                 startActivity(intent)
             }
 

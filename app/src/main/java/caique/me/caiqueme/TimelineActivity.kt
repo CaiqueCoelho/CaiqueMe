@@ -11,6 +11,12 @@ class TimelineActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_timeline)
+
+        timeline_aiesec_more.setOnClickListener { clickSeeMore(timeline_aiesec_more) }
+        timeline_ufms_more.setOnClickListener { clickSeeMore(timeline_ufms_more) }
+        timeline_jera_more.setOnClickListener { clickSeeMore(timeline_jera_more) }
+        timeline_jera2_more.setOnClickListener { clickSeeMore(timeline_jera2_more) }
+        timeline_jera3_more.setOnClickListener { clickSeeMore(timeline_jera3_more) }
     }
 
     private fun clickSeeMore(textView: TextView) {
@@ -19,31 +25,31 @@ class TimelineActivity : AppCompatActivity() {
 
             timeline_aiesec_more.id -> {
                 val intent = Intent(this, DescJobActivity::class.java)
-                intent.putExtra("origin", AIESEC_DIRECTOR)
+                intent.putExtra("origin", AIESEC_DIRECTOR.toString())
                 startActivity(intent)
             }
 
             timeline_ufms_more.id -> {
                 val intent = Intent(this, DescJobActivity::class.java)
-                intent.putExtra("origin", UFMS)
+                intent.putExtra("origin", UFMS.toString())
                 startActivity(intent)
             }
 
             timeline_jera_more.id -> {
                 val intent = Intent(this, DescJobActivity::class.java)
-                intent.putExtra("origin", JERA_QA)
+                intent.putExtra("origin", JERA_QA.toString())
                 startActivity(intent)
             }
 
             timeline_jera2_more.id -> {
                 val intent = Intent(this, DescJobActivity::class.java)
-                intent.putExtra("origin", JERA_CX)
+                intent.putExtra("origin", JERA_CX.toString())
                 startActivity(intent)
             }
 
             timeline_jera3_more.id -> {
                 val intent = Intent(this, DescJobActivity::class.java)
-                intent.putExtra("origin", JERA_ANDROID)
+                intent.putExtra("origin", JERA_ANDROID.toString())
                 startActivity(intent)
             }
 

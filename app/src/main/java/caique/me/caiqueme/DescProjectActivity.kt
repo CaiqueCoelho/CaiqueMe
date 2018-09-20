@@ -1,9 +1,14 @@
 package caique.me.caiqueme
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import kotlinx.android.synthetic.main.activity_desc_project.*
+import android.webkit.WebView
+import android.webkit.WebViewClient
+
+
 
 class DescProjectActivity : AppCompatActivity() {
 
@@ -11,7 +16,12 @@ class DescProjectActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_desc_project)
 
-        val origin = intent.getStringExtra("origin").toInt()
+        val bundle=intent.extras
+        var origin = 1
+        if(bundle!=null)
+        {
+            origin = bundle.getString("origin").toInt()
+        }
 
         var textTitle = ""
         var textDesc = ""
@@ -27,6 +37,11 @@ class DescProjectActivity : AppCompatActivity() {
                         "\n - O aplicativo é completamente gratuito e surgiu como uma ideia de um MVP afim de levar o teste eneagrama ao maior número de usuários possíveis" +
                         "\n - Com o sucesso do App hoje trabalho em um plano de negócio com o objetivo de transformar o aplicativo em uma startup na área de gestão de pessoas"
                 textLink = "https://play.google.com/store/apps/details?id=caiquecoelho.com.testeeneagrama"
+
+                desc_title_project.text = textTitle
+                desc_desc_project.text = textDesc
+
+                project_see.setOnClickListener { clickButtonWebview(textLink) }
             }
 
             TCC ->{
@@ -41,6 +56,11 @@ class DescProjectActivity : AppCompatActivity() {
                         "algoritmo k-means para exploração e extração de informações relevantes que pudessem contribuir positivamente para planejamentos " +
                         "de projetos futuros"
                 textLink = "abordagem de text mining com o uso de agrupamento em clusters com o algoritmo k-means para exploração e extração de informações relevantes"
+
+                desc_title_project.text = textTitle
+                desc_desc_project.text = textDesc
+
+                project_see.setOnClickListener { clickButtonWebview(textLink) }
             }
 
             IA -> {
@@ -50,7 +70,9 @@ class DescProjectActivity : AppCompatActivity() {
                         "\n - Intro to Python for Data Science " +
                         "\n - Mineração de emoção em Textos com Python e NLTK" +
                         "\n - Top 5 Machine Learning Libraries in Python"
-                project_see_git.visibility = View.GONE
+                project_see.visibility = View.GONE
+                desc_title_project.text = textTitle
+                desc_desc_project.text = textDesc
             }
 
             TEXTS -> {
@@ -64,6 +86,15 @@ class DescProjectActivity : AppCompatActivity() {
                         "\n - Um oceano azul para encontrar os seus candidatos desta eleição!"
                 textLink = "https://www.linkedin.com/in/caiquecoelho/detail/recent-activity/posts/"
                 textLinkGit = "https://medium.com/@caiquedpfc"
+
+                desc_title_project.text = textTitle
+                desc_desc_project.text = textDesc
+
+                project_see.text = "Ver artigos no LinkedIn"
+                project_see.text = "Ver artigos no Medium"
+
+                project_see.setOnClickListener { clickButtonWebview(textLink) }
+                project_see_git.setOnClickListener { clickButtonWebview(textLinkGit) }
             }
 
             GASOLINA -> {
@@ -73,6 +104,12 @@ class DescProjectActivity : AppCompatActivity() {
                         "\n\nO app tem como objetivo informar principal informar se é melhor abastecer com álcool ou gasolina dependendo do valor de ambos"
                 textLink = "https://play.google.com/store/apps/details?id=caiquecoelho.com.gasolina"
                 textLinkGit = "https://github.com/CaiqueCoelho/Gasolina"
+
+                desc_title_project.text = textTitle
+                desc_desc_project.text = textDesc
+
+                project_see.setOnClickListener { clickButtonWebview(textLink) }
+                project_see_git.setOnClickListener { clickButtonWebview(textLinkGit) }
             }
 
             CAM -> {
@@ -91,12 +128,22 @@ class DescProjectActivity : AppCompatActivity() {
                         "de 2017!"
                 textLink = "https://play.google.com/store/apps/details?id=cameradogemidao.caiquecoelho.com.cameradogemidao"
                 textLinkGit = "https://github.com/CaiqueCoelho/Gemidao-Cam"
+
+                desc_title_project.text = textTitle
+                desc_desc_project.text = textDesc
+
+                project_see.setOnClickListener { clickButtonWebview(textLink) }
+                project_see_git.setOnClickListener { clickButtonWebview(textLinkGit) }
             }
 
         }
-
     }
 
+    fun clickButtonWebview(url: String){
+        val intent = Intent(this, WebviewActivity::class.java)
+        intent.putExtra("url", url)
+        startActivity(intent)
+    }
 
     companion object {
         private const val ENEAGRAMA = 1

@@ -3,7 +3,7 @@ package caique.me.caiqueme
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 
-class AboutMe : AppCompatActivity() {
+class AboutMeActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

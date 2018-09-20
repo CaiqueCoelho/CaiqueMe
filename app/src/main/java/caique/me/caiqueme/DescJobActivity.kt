@@ -3,6 +3,7 @@ package caique.me.caiqueme
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_desc_job.*
+import kotlinx.android.synthetic.main.activity_desc_project.*
 
 class DescJobActivity : AppCompatActivity() {
 
@@ -10,7 +11,12 @@ class DescJobActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_desc_job)
 
-        val origin = intent.getStringExtra("origin").toInt()
+        val bundle=intent.extras
+        var origin = 1
+        if(bundle!=null)
+        {
+            origin = bundle.getString("origin").toInt()
+        }
 
         if(origin == AIESEC_DIRECTOR) {
 
