@@ -18,6 +18,13 @@ class AboutMeActivity : AppCompatActivity() {
 
         setContentView(R.layout.activity_about_me)
 
-        Picasso.get().load(R.drawable.caique1).into(about_img_caique)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+        Picasso.get().load(R.drawable.presidente).into(about_img_caique)
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        finish()
+        return true
     }
 }

@@ -9,10 +9,19 @@ import android.view.WindowManager
 import kotlinx.android.synthetic.main.activity_desc_project.*
 import android.webkit.WebView
 import android.webkit.WebViewClient
+import android.widget.ImageView
+import com.synnapps.carouselview.ImageListener
+
+
 
 
 
 class DescProjectActivity : AppCompatActivity() {
+
+    val sampleImages = arrayListOf(R.drawable.certificate_data_camp,
+            R.drawable.certificate_elements_of_ai,
+            R.drawable.certificate_mineracao_de_emocao,
+            R.drawable.certificate_python_top5_libraries)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,6 +31,8 @@ class DescProjectActivity : AppCompatActivity() {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN)
 
         setContentView(R.layout.activity_desc_project)
+
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         val bundle=intent.extras
         var origin = 1
@@ -81,6 +92,12 @@ class DescProjectActivity : AppCompatActivity() {
                 project_see.visibility = View.GONE
                 desc_title_project.text = textTitle
                 desc_desc_project.text = textDesc
+
+                carouselView.visibility = View.VISIBLE
+
+                carouselView.pageCount = sampleImages.size
+                carouselView.setImageListener(imageListener)
+
             }
 
             TEXTS -> {
@@ -100,6 +117,7 @@ class DescProjectActivity : AppCompatActivity() {
 
                 project_see.text = "Ver artigos no LinkedIn"
                 project_see_git.text = "Ver artigos no Medium"
+                project_see_git.visibility = View.VISIBLE
 
                 project_see.setOnClickListener { clickButtonWebview(textLink) }
                 project_see_git.setOnClickListener { clickButtonWebview(textLinkGit) }
@@ -118,6 +136,7 @@ class DescProjectActivity : AppCompatActivity() {
 
                 project_see.setOnClickListener { clickButtonWebview(textLink) }
                 project_see_git.setOnClickListener { clickButtonWebview(textLinkGit) }
+                project_see_git.visibility = View.VISIBLE
             }
 
             CAM -> {
@@ -142,6 +161,7 @@ class DescProjectActivity : AppCompatActivity() {
 
                 project_see.setOnClickListener { clickButtonWebview(textLink) }
                 project_see_git.setOnClickListener { clickButtonWebview(textLinkGit) }
+                project_see_git.visibility = View.VISIBLE
             }
 
         }
@@ -151,6 +171,17 @@ class DescProjectActivity : AppCompatActivity() {
         val intent = Intent(this, WebviewActivity::class.java)
         intent.putExtra("url", url)
         startActivity(intent)
+    }
+
+    var imageListener: ImageListener = object : ImageListener {
+        override fun setImageForPosition(position: Int, imageView: ImageView) {
+            imageView.setImageResource(sampleImages[position])
+        }
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        finish()
+        return true
     }
 
     companion object {

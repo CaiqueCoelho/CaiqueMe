@@ -20,6 +20,76 @@
         app:layout_constraintVertical_bias="0" />
 
     <ImageView
+        android:id="@+id/main_facebook"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toBottomOf="@id/main_txt_name_and_age"
+        app:layout_constraintStart_toStartOf="@id/main_txt_name_and_age"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:src="@drawable/facebook"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintHorizontal_bias="0"/>
+
+    <ImageView
+        android:id="@+id/main_linkedin"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="@id/main_facebook"
+        app:layout_constraintStart_toEndOf="@id/main_facebook"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:src="@drawable/linkedin"
+        android:layout_marginStart="8dp"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintHorizontal_bias="0"/>
+
+    <ImageView
+        android:id="@+id/main_git"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="@id/main_facebook"
+        app:layout_constraintStart_toEndOf="@id/main_linkedin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:src="@drawable/git"
+        android:layout_marginStart="8dp"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintHorizontal_bias="0"/>
+
+    <ImageView
+        android:id="@+id/main_email"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="@id/main_facebook"
+        app:layout_constraintStart_toEndOf="@id/main_git"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:src="@drawable/email"
+        android:layout_marginStart="8dp"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintHorizontal_bias="0"/>
+
+    <ImageView
+        android:id="@+id/main_phone"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="@id/main_facebook"
+        app:layout_constraintStart_toEndOf="@id/main_email"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:src="@drawable/phone"
+        android:layout_marginStart="8dp"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintHorizontal_bias="0"/>
+
+    <ImageView
         android:id="@+id/main_img_caique"
         android:layout_width="wrap_content"
         android:layout_height="200dp"
@@ -36,12 +106,13 @@
         android:layout_height="0dp"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
         android:fillViewport="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1"
         app:layout_constraintStart_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/main_txt_name_and_age">
+        app:layout_constraintTop_toBottomOf="@id/main_facebook">
 
         <android.support.constraint.ConstraintLayout
             android:id="@+id/constraint"

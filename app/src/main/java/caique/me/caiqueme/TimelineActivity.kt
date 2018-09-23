@@ -19,6 +19,8 @@ class TimelineActivity : AppCompatActivity() {
 
         setContentView(R.layout.activity_timeline)
 
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
         timeline_aiesec_more.setOnClickListener { clickSeeMore(timeline_aiesec_more) }
         timeline_ufms_more.setOnClickListener { clickSeeMore(timeline_ufms_more) }
         timeline_jera_more.setOnClickListener { clickSeeMore(timeline_jera_more) }
@@ -62,6 +64,11 @@ class TimelineActivity : AppCompatActivity() {
 
         }
 
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        finish()
+        return true
     }
 
     companion object {

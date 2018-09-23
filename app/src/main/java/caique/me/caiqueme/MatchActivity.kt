@@ -18,6 +18,8 @@ class MatchActivity : AppCompatActivity() {
 
         setContentView(R.layout.activity_match)
 
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
         Picasso.get().load(R.drawable.lu).into(match_img_lu)
         Picasso.get().load(R.drawable.lu).into(match_img_caique)
         Picasso.get().load(R.drawable.dono_ic).into(match_icon_dono)
@@ -27,5 +29,10 @@ class MatchActivity : AppCompatActivity() {
         Picasso.get().load(R.drawable.client_ic).into(match_icon_cliente)
         Picasso.get().load(R.drawable.abracos).into(match_img_abraco)
         Picasso.get().load(R.drawable.lu_rise).into(match_lu_happy)
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        finish()
+        return true
     }
 }

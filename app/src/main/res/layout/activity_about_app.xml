@@ -76,10 +76,10 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="24dp"
                         android:layout_marginTop="24dp"
-                        android:layout_marginEnd="16dp"
+                        android:layout_marginEnd="42dp"
                         android:fontFamily="@font/droidserifregular"
                         android:lineSpacingExtra="5dp"
-                        android:text="Quando eu recebi o próximo passo do processo de trainee da Magazine Luiza e descobri que qualquer tipo de arquivo poderia ser enviado para responder a pergunta"
+                        android:text="Este aplicativo foi desenvolvido exclusivamente para a etapa do processo seletivo de trainee da Magazine Luiza com o intuito de responder a pergunta “Por que você deve ser um Trainee Magalu?”, para mais informações entre em contato comigo ou veja este aplicativo no meu github"
                         android:textColor="@android:color/black"
                         android:textSize="18sp"
                         app:layout_constraintBottom_toBottomOf="@id/card_constraint"
@@ -87,6 +87,21 @@
                         app:layout_constraintStart_toStartOf="@id/card_constraint"
                         app:layout_constraintTop_toBottomOf="@id/card_constraint"
                         app:layout_constraintVertical_bias="0" />
+
+                    <Button
+                        android:id="@+id/aboutapp_git"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Ver no Github"
+                        android:textAllCaps="false"
+                        android:background="@drawable/shape_button_filled"
+                        app:layout_constraintTop_toBottomOf="@id/aboutme_txt_desc"
+                        app:layout_constraintStart_toStartOf="@id/card_constraint"
+                        app:layout_constraintEnd_toEndOf="@id/card_constraint"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginEnd="42dp"
+                        android:textColor="@color/txt_blue"
+                        app:layout_constraintVertical_bias="1"/>
 
                 </android.support.constraint.ConstraintLayout>
 

@@ -20,6 +20,8 @@ class ProjectsActivity : AppCompatActivity() {
 
         setContentView(R.layout.activity_projects)
 
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
         projects_card_eneagrama.setOnClickListener { clickSeeMore(projects_card_eneagrama) }
         projects_card_tcc.setOnClickListener { clickSeeMore(projects_card_tcc) }
         projects_card_ia.setOnClickListener { clickSeeMore(projects_card_ia) }
@@ -79,5 +81,10 @@ class ProjectsActivity : AppCompatActivity() {
         private const val TEXTS = 4
         private const val GASOLINA = 5
         private const val CAM = 6
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        finish()
+        return true
     }
 }

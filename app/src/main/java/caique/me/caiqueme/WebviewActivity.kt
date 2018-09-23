@@ -5,6 +5,9 @@ import android.os.Bundle
 import android.view.Window
 import android.view.WindowManager
 import kotlinx.android.synthetic.main.activity_webview.*
+import android.app.ProgressDialog
+import android.widget.ProgressBar
+
 
 class WebviewActivity : AppCompatActivity() {
 
@@ -17,6 +20,8 @@ class WebviewActivity : AppCompatActivity() {
 
         setContentView(R.layout.activity_webview)
 
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
         val bundle=intent.extras
         var url = ""
         if(bundle!=null)
@@ -24,6 +29,13 @@ class WebviewActivity : AppCompatActivity() {
             url = bundle.getString("url").toString()
         }
 
+        webview.webViewClient = AppWebViewClients(progress_bar)
+        webview.settings.javaScriptEnabled = true
         webview.loadUrl(url)
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        finish()
+        return true
     }
 }

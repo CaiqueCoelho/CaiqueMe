@@ -18,6 +18,8 @@ class DescJobActivity : AppCompatActivity() {
 
         setContentView(R.layout.activity_desc_job)
 
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
         val bundle=intent.extras
         var origin = 1
         if(bundle!=null)
@@ -28,8 +30,9 @@ class DescJobActivity : AppCompatActivity() {
         if(origin == AIESEC_DIRECTOR) {
 
             val aiesecTime = "junho de 2013 - janeiro de 2017"
-            val aiesecTitle = "AIESEC Campo Grande: Diretor de Gestão de Talentos"
-            val aiesec = "- Organizar o processo seletivo para membros novos, bem como ações de head hunting, para suprir os déficits de RH do CL, caso necessário.\n" +
+            val aiesecTitle = "Diretor de Gestão de Talentos"
+            val aiesec = "AIESEC Campo Grande: Voluntariado" +
+                    "\n\n- Organizar o processo seletivo para membros novos, bem como ações de head hunting, para suprir os déficits de RH do CL, caso necessário.\n" +
                     "- Selecionar e gerir o time responsável pela organização do processo seletivo para novos membros da AIESEC em Campo Grande\n" +
                     "- Implementar o modelo de seleção por competência e treinar os avaliadores do processo seletivo\n" +
                     "- Implementar a indução organizacional para todos os membros novos, incluindo processos como mentoring e eventos, bem como garantir a implementação do induction funcional.\n" +
@@ -105,6 +108,11 @@ class DescJobActivity : AppCompatActivity() {
             desc_desc.text = jeraAndroid
         }
 
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        finish()
+        return true
     }
 
     companion object {
