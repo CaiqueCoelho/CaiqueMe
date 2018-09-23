@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MatchActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/match_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="cursive"
+                android:text="It's a Match"
+                android:textAlignment="center"
+                android:textColor="@color/txt_blue"
+                android:textSize="48sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0" />
+
+            <ImageView
+                android:id="@+id/match_img_lu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                tools:src="@drawable/lu"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/match_title"
+                app:layout_constraintVertical_bias="0" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/match_card_magalu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="8dp"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintBottom_toBottomOf="@id/match_img_lu"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/match_img_lu"
+                app:layout_constraintTop_toTopOf="@id/match_img_lu">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/droidserifregular"
+                        android:text="Por que você deve ser um Trainee Magalu?"
+                        android:textColor="@android:color/black" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <ImageView
+                android:id="@+id/match_img_caique"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                tools:src="@drawable/lu"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/match_img_lu"
+                app:layout_constraintVertical_bias="0" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/match_card_caique_first"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="16dp"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/match_img_caique"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintStart_toStartOf="@id/match_img_lu"
+                app:layout_constraintTop_toTopOf="@id/match_img_caique"
+                app:layout_constraintVertical_bias="0">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="16dp"
+                        android:fontFamily="@font/droidserifregular"
+                        android:text="Que tal eu tentar responder esta pergunta demonstrando o quanto os valores da Magazine Luiza se alinham com o meus? Afinal conhecimento pode ser obtido e vontade para aprender eu tenho de sobra, mas os valores são intrínsecos de cada ser e moldam as nossas atitudes!"
+                        android:textColor="@android:color/black" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/match_card_dono"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintStart_toStartOf="@id/match_img_lu"
+                android:layout_marginTop="24dp"
+                app:layout_constraintTop_toBottomOf="@id/match_card_caique_first"
+                app:layout_constraintVertical_bias="0">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_horizontal">
+
+                        <ImageView
+                            android:id="@+id/match_icon_dono"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            tools:src="@drawable/dono_ic"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="16dp"
+                            android:fontFamily="@font/droidserifregular"
+                            android:text="Atitude de dono"
+                            android:layout_marginEnd="16dp"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/droidserifregular"
+                        android:text="Estar em um trabalho que você tenha autonomia e confiança para resolver problemas, melhorar processos e entregar resultados conforme você acredita que seja a melhor forma é o sonho de qualquer jovem da geração do milênio e é um dos valores que mais me inspiram a querer ser parte do time da Magazine Luiza. Eu acredito fortemente que não apenas toda empresa, mas toda nação só é capaz de evoluir e crescer quando todos se sentem pertencentes e protagonistas no seu dia a dia, possuindo visão holística e entendimento da importância do impacto do seu trabalho em todas as pessoas e setores, ou seja, se sentindo responsável pelo crescimento seja limpando um ambiente ou negociando um acordo importante."
+                        android:textColor="@android:color/black" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/match_card_gente"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintStart_toStartOf="@id/match_img_lu"
+                app:layout_constraintTop_toBottomOf="@id/match_card_dono"
+                android:layout_marginTop="24dp"
+                app:layout_constraintVertical_bias="0">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_horizontal">
+
+                        <ImageView
+                            android:id="@+id/match_icon_gente"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            tools:src="@drawable/gente_ic"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="16dp"
+                            android:fontFamily="@font/droidserifregular"
+                            android:text="Gente que gosta de gente"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold"
+                            android:layout_marginEnd="16dp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/droidserifregular"
+                        android:text=" Gente que ama gente, gente que é apaixonado por gente. Esse sou eu, sociável, curioso, conselheiro, bom ouvinte, um bom líder, um bom liderado, um mediador, um pacifista e acima de tudo empático! Sou apaixonado por pessoas, apaixonado em ajudar pessoas, apaixonado por ensinar e a ser ensinado. Gosto de estar cercado por diversidade, de aprender os mais diversos conhecimentos das mais diversas culturas e de entender como as mais variadas pessoas se sentem, se expressam e se comportam, sendo adaptável a tudo e a todos a fim de disseminar paz e amor entre as pessoas, afinal qualquer tipo de resultado só é possível quando concentramos o nossos esforços nas pessoas que estão por trás das ações que geram os resultados. Pessoas vêm antes de qualquer resultado!"
+                        android:textColor="@android:color/black" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/match_card_massa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintStart_toStartOf="@id/match_img_lu"
+                app:layout_constraintTop_toBottomOf="@id/match_card_gente"
+                android:layout_marginTop="24dp"
+                app:layout_constraintVertical_bias="0">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="16dp"
+                        android:layout_gravity="center_horizontal">
+
+                        <ImageView
+                            android:id="@+id/match_icon_massa"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            tools:src="@drawable/massa_ic"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="16dp"
+                            android:fontFamily="@font/droidserifregular"
+                            android:text="Mão na massa"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold"
+                            android:layout_marginEnd="16dp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/droidserifregular"
+                        android:text=" Quando eu recebi o próximo passo do processo e descobri que qualquer arquivo poderia ser enviado para responder a pergunta: “Por que você deve ser um Trainee Magalu?” confesso que inúmeras ideias passaram pela minha cabeça, as mais criativas o possível, mas acredito que nada seria mais mão na massa e demonstraria o meu valor e vontade em fazer parte deste processo do que construir algo que demonstra a minha essência, os meus conhecimentos e os meus valores como este aplicativo. Este aplicativo é a maior prova da minha vontade em querer fazer parte como trainee da Magazine Luiza e maior prova das minhas virtudes."
+                        android:textColor="@android:color/black" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/match_card_foco"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintStart_toStartOf="@id/match_img_lu"
+                app:layout_constraintTop_toBottomOf="@id/match_card_massa"
+                android:layout_marginTop="24dp"
+                app:layout_constraintVertical_bias="0">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_marginTop="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_horizontal">
+
+                        <ImageView
+                            android:id="@+id/match_icon_foco"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            tools:src="@drawable/foco_ic"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="16dp"
+                            android:fontFamily="@font/droidserifregular"
+                            android:text="Foco no resultado sustentável"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold"
+                            android:layout_marginEnd="16dp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Como dito anteriormente, inúmeras ideias criativas e super elaboradas passaram pela minha cabeça, afinal este processo é decisivo e precisa ser feito com eficiência e eficácia. Muita das ideias era eficientes, mas não eram eficácias, pois o tempo era escasso, logo o projeto do aplicativo como um todo precisava ser algo impactante, mas que fosse possível de ser realizado com excelência dentro do tempo. Além disso toda a ideia foi estruturada de uma maneira para que futuramente possa ter fácil manutenção a fim de ser utilizado como um portfólio pessoal e foi mantido de uma forma que fica fácil a inserção de novas funcionalidades e ideias, sendo produzido de forma sustentável e que permite a fácil reutilização. Além disso este projeto foi desenvolvido utilizando metodologias ágeis o que permitiu a idealização de um app consolidado em cima dos princípios iterativos e incremental."
+                        android:fontFamily="@font/droidserifregular"
+                        android:textColor="@android:color/black" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/match_card_cliente"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintStart_toStartOf="@id/match_img_lu"
+                app:layout_constraintTop_toBottomOf="@id/match_card_foco"
+                android:layout_marginTop="24dp"
+                app:layout_constraintVertical_bias="0">
+
+                <LinearLayout
+                    android:layout_marginTop="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_horizontal">
+
+                        <ImageView
+                            android:id="@+id/match_icon_cliente"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            tools:src="@drawable/client_ic"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="16dp"
+                            android:fontFamily="@font/droidserifregular"
+                            android:text="Cliente em primeiro lugar"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold"
+                            android:layout_marginEnd="16dp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Uma das certezas que eu tenho na vida é que todos nascemos para ser clientes! Antes de nascer eu já era cliente, a partir do momento que minha mãe escolheu o médico que seria responsável pelo meu nascimento, ali estava o meu primeiro contato como cliente. A verdade é que nós somos clientes a todos os momentos, quando vamos ao mercado, quando assistimos um filme, quando fazemos uma ligação e etc. Todas as iterações e escolhas que fazemos na vida nós fazemos como cliente e isso nos define. Talvez nós nunca tenhamos prestado muita atenção enquanto uma marca ou uma empresa influencia em nossas escolhas de vida, em nossa saúde, em nossa ética, filosofia e política.
+
+\n\nUma outra certeza que tenho na vida é que todo mundo quer ser bem atendido, quer ter uma experiência legal, personalizada, que te faça sentir bem. E a grande pergunta aqui é: será que quando nós estamos atendendo os nossos clientes nós lembramos de toda essa importância?
+Na minha vida existem duas experiências que me fazem refletir profundamente sobre isso.
+
+\n\nA primeira foi como manager de customer experience em uma empresa de desenvolvimento de software. Como customer experience eu trabalhei em vários projetos com os mais diversos clientes de todo o Brasil e cada um deles possuía sentimentos, ideias e mentes diferentes, portanto a forma como eu conduzia as reuniões, atendimentos e negociações precisava ser diferente para cada um deles, precisava ser personalizada. Então a primeira regra que eu aprendi sobre colocar o cliente em primeiro lugar é que todo cliente tem necessidades diferentes e nós precisamos entender essas necessidades e atendê-las de forma diferente para cada um deles.
+
+\n\nA segunda experiência foi como idealizador do app Teste Eneagrama, com muitos downloads diversas pessoas começaram a utilizar o app e a fazerem avaliações e sugestões de melhorias e com isso aprendi outra regra: Clientes empoderados e que também se sentem “donos” dos produtos e serviços que consomem podem ser um grande aliado no crescimento e evolução da sua empresa. Com isto entendi o valor em incentivar os usuários a não apenas avaliar o aplicativo, mas também a sugerir melhorias e com esses feedbacks aprender a ser capaz a cada dia mais fornecer conteúdo mais personalizado para cada usuário e assim continuar evoluindo.
+"
+                        android:fontFamily="@font/droidserifregular"
+                        android:textColor="@android:color/black" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <ImageView
+                android:id="@+id/match_img_abraco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                tools:src="@drawable/abracos"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/match_card_cliente"
+                app:layout_constraintVertical_bias="0" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/match_card_abracos"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="16dp"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/match_img_abraco"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintStart_toStartOf="@id/match_img_lu"
+                app:layout_constraintTop_toTopOf="@id/match_img_abraco"
+                app:layout_constraintVertical_bias="0"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Pelo que vi a Lu já está amando o que eu disse, espero que vocês gostem também! Um abraço virtual para vocês, estou ansioso pelo feedback!"
+                        android:fontFamily="@font/droidserifregular"
+                        android:textColor="@android:color/black" />
+
+                    <ImageView
+                        android:id="@+id/match_lu_happy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        tools:src="@drawable/lu_rise"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -8,7 +8,7 @@
     tools:context=".AboutMeActivity">
 
     <ImageView
-        android:id="@+id/main_img_caique"
+        android:id="@+id/about_img_caique"
         android:layout_width="wrap_content"
         android:layout_height="200dp"
         android:scaleType="centerCrop"
@@ -32,7 +32,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/main_img_caique"
+        app:layout_constraintTop_toBottomOf="@id/about_img_caique"
         app:layout_constraintVertical_bias="0" />
 
     <View
@@ -51,8 +51,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fillViewport="true"
+        android:layout_height="0dp"
         app:layout_constraintTop_toTopOf="@id/about_view"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -210,9 +209,10 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
                 android:fontFamily="@font/droidserifregular"
                 android:lineSpacingExtra="5dp"
-                android:text="\''Quem não sabe onde quer chegar, qualquer lugar serve.'' Essa é uma das afirmações que repito para mim todos dias em todas as manhãs e sempre que me sinto perdido e assim como planejo todas as atividades do meu dia também planejo todos os meus objetivos e sonhos de vida, com certeza esses sonhos já mudaram muito ao longo do caminho, desde quando sohava em ser presidente do Brasil quando era apenas uma criança. Hoje sonho em poder ser uma referência e inspiração em nosso país e pretendo começar encontrando um ambiente de trabalho que me inspire a continuar crescendo, que me de orgulho em fazer parte do quadro de colaboradores, sonho em trabalhar em um lugar que o trabalho seja uma paixão, que trabalho seja uma forma de impactar positivamente na vida de todas as pessoas que estejam em contato com ele e que acima de tudo me proporcione uma experiência de percentiemnto e amor"
+                android:text="\''Quem não sabe onde quer chegar, qualquer lugar serve.'' Essa é uma das afirmações que repito para mim todos dias em todas as manhãs e sempre que me sinto perdido e assim como planejo todas as atividades do meu dia também planejo todos os meus objetivos e sonhos de vida, com certeza esses sonhos já mudaram muito ao longo do caminho, desde quando sohava em ser presidente do Brasil quando era apenas uma criança. Hoje sonho em poder ser uma referência e inspiração em nosso país e pretendo começar encontrando um ambiente de trabalho que me inspire a continuar crescendo, que me de orgulho em fazer parte do quadro de colaboradores, sonho em trabalhar em um lugar que o trabalho seja uma paixão, que trabalho seja uma forma de impactar positivamente na vida de todas as pessoas que estejam em contato com ele e que acima de tudo me proporcione uma experiência de percencimento e amor."
                 android:textColor="@android:color/black"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="@id/about_constraint"

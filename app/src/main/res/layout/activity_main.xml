@@ -46,144 +46,8 @@
         <android.support.constraint.ConstraintLayout
             android:id="@+id/constraint"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <android.support.v7.widget.CardView
-                android:id="@+id/main_card_app"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_marginBottom="24dp"
-                android:layout_marginTop="16dp"
-                app:cardCornerRadius="4dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@id/constraint"
-                app:layout_constraintHorizontal_bias="1"
-                app:layout_constraintStart_toEndOf="@id/main_card_talk"
-                app:layout_constraintTop_toBottomOf="@id/main_card_caiqueandlu"
-                app:layout_constraintVertical_bias="0">
-
-                <android.support.constraint.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <ImageView
-                        android:id="@+id/main_item_app"
-                        android:layout_width="16dp"
-                        android:layout_height="16dp"
-                        android:layout_margin="16dp"
-                        android:src="@drawable/ic_ellipse"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0" />
-
-                    <TextView
-                        android:id="@+id/main_txt_app"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="16dp"
-                        android:layout_marginRight="16dp"
-                        android:fontFamily="@font/avenirheavy"
-                        android:text="Sobre o app"
-                        android:textColor="@color/txt_blue"
-                        android:textSize="16sp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0"
-                        app:layout_constraintStart_toStartOf="@id/main_item_app"
-                        app:layout_constraintTop_toBottomOf="@id/main_item_app" />
-
-                    <TextView
-                        android:id="@+id/main_txt_n_app"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="16dp"
-                        android:layout_marginRight="16dp"
-                        android:fontFamily="@font/avenirheavy"
-                        android:text="Motivação do App"
-                        android:textColor="@color/txt_black_opacity"
-                        android:textSize="10sp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0"
-                        app:layout_constraintStart_toStartOf="@id/main_item_app"
-                        app:layout_constraintTop_toBottomOf="@id/main_txt_app"
-                        app:layout_constraintVertical_bias="0" />
-
-                </android.support.constraint.ConstraintLayout>
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:id="@+id/main_card_talk"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_marginBottom="24dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginTop="16dp"
-                app:cardCornerRadius="4dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/main_card_app"
-                app:layout_constraintHorizontal_bias="0"
-                app:layout_constraintStart_toStartOf="@id/constraint"
-                app:layout_constraintTop_toBottomOf="@id/main_card_projects"
-                app:layout_constraintVertical_bias="0">
-
-                <android.support.constraint.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <ImageView
-                        android:id="@+id/main_item_talk"
-                        android:layout_width="16dp"
-                        android:layout_height="16dp"
-                        android:layout_margin="16dp"
-                        android:src="@drawable/ic_ellipse"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0" />
-
-                    <TextView
-                        android:id="@+id/main_txt_talk"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="16dp"
-                        android:layout_marginRight="16dp"
-                        android:fontFamily="@font/avenirheavy"
-                        android:text="Fale comigo"
-                        android:textColor="@color/txt_blue"
-                        android:textSize="16sp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0"
-                        app:layout_constraintStart_toStartOf="@id/main_item_talk"
-                        app:layout_constraintTop_toBottomOf="@id/main_item_talk" />
-
-                    <TextView
-                        android:id="@+id/main_txt_n_talk"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="16dp"
-                        android:layout_marginRight="16dp"
-                        android:fontFamily="@font/avenirheavy"
-                        android:text="Que tal falar com o meu bot"
-                        android:textColor="@color/txt_black_opacity"
-                        android:textSize="10sp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0"
-                        app:layout_constraintStart_toStartOf="@id/main_item_talk"
-                        app:layout_constraintTop_toBottomOf="@id/main_txt_talk"
-                        app:layout_constraintVertical_bias="0" />
-
-                </android.support.constraint.ConstraintLayout>
-
-            </android.support.v7.widget.CardView>
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
 
             <android.support.v7.widget.CardView
                 android:id="@+id/main_card_aboutme"
@@ -206,7 +70,8 @@
                         android:id="@+id/main_item_start"
                         android:layout_width="16dp"
                         android:layout_height="16dp"
-                        android:layout_margin="16dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
                         android:src="@drawable/ic_ellipse"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -225,6 +90,7 @@
                         android:text="Sobre mim"
                         android:textColor="@color/txt_blue"
                         android:textSize="16sp"
+                        app:layout_constraintVertical_bias="0.2"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0"
@@ -253,12 +119,12 @@
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
-                android:id="@+id/main_card_caiqueandlu"
+                android:id="@+id/main_card_aboutapp"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_marginTop="16dp"
                 app:cardCornerRadius="4dp"
-                app:layout_constraintBottom_toTopOf="@id/main_card_app"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@id/constraint"
                 app:layout_constraintHorizontal_bias="1"
                 app:layout_constraintStart_toEndOf="@id/main_card_projects"
@@ -273,7 +139,8 @@
                         android:id="@+id/main_item_perfis"
                         android:layout_width="16dp"
                         android:layout_height="16dp"
-                        android:layout_margin="16dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
                         android:src="@drawable/ic_ellipse"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -289,12 +156,13 @@
                         android:layout_marginEnd="16dp"
                         android:layout_marginRight="16dp"
                         android:fontFamily="@font/avenirheavy"
-                        android:text="Caique e LU"
+                        android:text="Sobre o App"
                         android:textColor="@color/txt_blue"
                         android:textSize="16sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintVertical_bias="0.2"
                         app:layout_constraintStart_toStartOf="@id/main_item_perfis"
                         app:layout_constraintTop_toBottomOf="@id/main_item_perfis" />
 
@@ -305,7 +173,7 @@
                         android:layout_marginEnd="16dp"
                         android:layout_marginRight="16dp"
                         android:fontFamily="@font/avenirheavy"
-                        android:text="O fit perfeito"
+                        android:text="Motivação do App"
                         android:textColor="@color/txt_black_opacity"
                         android:textSize="10sp"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -325,8 +193,8 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginTop="16dp"
                 app:cardCornerRadius="4dp"
-                app:layout_constraintBottom_toTopOf="@id/main_card_talk"
-                app:layout_constraintEnd_toStartOf="@id/main_card_caiqueandlu"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/main_card_aboutapp"
                 app:layout_constraintHorizontal_bias="0"
                 app:layout_constraintStart_toStartOf="@id/constraint"
                 app:layout_constraintTop_toBottomOf="@id/main_card_aboutme"
@@ -340,7 +208,8 @@
                         android:id="@+id/main_item_enneagram"
                         android:layout_width="16dp"
                         android:layout_height="16dp"
-                        android:layout_margin="16dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
                         android:src="@drawable/ic_ellipse"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -356,9 +225,10 @@
                         android:layout_marginEnd="16dp"
                         android:layout_marginRight="16dp"
                         android:fontFamily="@font/avenirheavy"
-                        android:text="Conquistas e Projetos"
+                        android:text="Conquistas"
                         android:textColor="@color/txt_blue"
                         android:textSize="16sp"
+                        app:layout_constraintVertical_bias="0.2"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0"
@@ -392,7 +262,7 @@
                 android:layout_height="0dp"
                 android:layout_marginStart="16dp"
                 app:cardCornerRadius="4dp"
-                app:layout_constraintBottom_toTopOf="@id/main_card_caiqueandlu"
+                app:layout_constraintBottom_toTopOf="@id/main_card_aboutapp"
                 app:layout_constraintEnd_toEndOf="@id/constraint"
                 app:layout_constraintHorizontal_bias="1"
                 app:layout_constraintStart_toEndOf="@id/main_card_aboutme"
@@ -407,7 +277,8 @@
                         android:id="@+id/main_item_friends"
                         android:layout_width="16dp"
                         android:layout_height="16dp"
-                        android:layout_margin="16dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
                         android:src="@drawable/ic_ellipse"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -424,6 +295,7 @@
                         android:layout_marginRight="16dp"
                         android:fontFamily="@font/avenirheavy"
                         android:text="Timeline"
+                        app:layout_constraintVertical_bias="0.2"
                         android:textColor="@color/txt_blue"
                         android:textSize="16sp"
                         app:layout_constraintBottom_toBottomOf="parent"
