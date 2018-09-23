@@ -21,7 +21,7 @@ class MatchActivity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         Picasso.get().load(R.drawable.lu).into(match_img_lu)
-        Picasso.get().load(R.drawable.lu).into(match_img_caique)
+        Picasso.get().load(R.drawable.caique_ic).into(match_img_caique)
         Picasso.get().load(R.drawable.dono_ic).into(match_icon_dono)
         Picasso.get().load(R.drawable.gente_ic).into(match_icon_gente)
         Picasso.get().load(R.drawable.massa_ic).into(match_icon_massa)
